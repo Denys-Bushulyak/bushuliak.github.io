@@ -11,7 +11,114 @@
 - Adept at translating business needs into technical solutions and optimizing processes.
 - Extensive knowledge of data processing, analytics, and system integration.
 
-___
+---
+## Skills[1]
+
+### Programming Languages and DSLs
+- Rust
+- Go
+- JavaScript/TypeScript
+- F#
+- Java
+- C#
+- PHP
+- SQL
+- Cypher QL
+- ArangoDB QL
+- Delphi
+- Custom DSLs
+- ANTLR
+- PEG Grammar
+
+### Architectural Patterns and Concepts
+- Hexagonal Architecture (Port and Adapter)
+- Domain-Driven Design (DDD)
+- MVC/HMVC
+- Service-Oriented Architecture (SOA)
+- Microservices
+- Event Sourcing
+- Pub/Sub
+- Finite State Machines
+- Flux Architecture Pattern
+- Onion Architecture
+- CQRS
+- Micro Frontend
+- Developer Experience (DX)
+- RBAC/ABAC
+- Concurrency
+- Multithreading
+
+### API Development
+- GraphQL
+- REST
+- SOAP
+- XML-RPC
+- WebSockets
+- Any Custom
+
+### Frontend Technologies
+- ReactJS
+- AngularJS/Angular
+- Vue.js
+- Redux
+- React Native
+- XState
+- RxJS
+- WebAssembly
+
+### Backend Technologies
+- Tokio
+- Laravel
+- Symfony
+- Express
+- Socket.io
+- ReactPHP
+- JDBC Type 3 Driver Implementation
+- RedBeanPHP
+- Doctrine
+- GraphQL (Apollo, Yoga, Vanilla)
+- WebAssembly
+- Pest.rs
+
+### Testing
+- Test-Driven Development (TDD)
+- Behavior-Driven Development (BDD)
+- Cucumber Framework
+
+### Tools and IDEs
+- VIM / VSCode
+- GitHub Actions
+- GitLab CI/CD
+- Git, SVN
+- Jest
+- React Testing Library
+- Playwright
+
+### Database Technologies
+- MySQL
+- PostgreSQL
+- SQLite
+- Redis & Redis Streams
+- MongoDB
+- ArangoDB
+- Neo4J
+- ClickHouse
+- Presto/Trino
+- Apache Arrow
+- Apache DataFusion
+- Parquet
+- Avro
+
+### Cloud and DevOps
+- Docker
+- Docker Swarm
+- AWS (EKS, SQS, SNS, Lambda, IAM)
+- Scaleway Cloud
+- Kubernetes
+- MinIO
+- Tableau Server
+- Apache Airflow
+
 ## Highlighted Projects
 
 ## Now You Know
@@ -36,7 +143,8 @@ I was responsible for designing the internal architecture, developing a product 
 * Service-Oriented Architecture (SOA)
 * Microservices
 * Hexagonal Architecture
-* REST, GraphQL
+* REST
+* GraphQL
 * Unit Testing
 * DataFusion
 * Arrow
@@ -179,9 +287,22 @@ I gathered business requirements and translated them into technical specificatio
 
 ---
 
+## Education
+
+Vinnitsa National Technical University (from 2008 to 2009)
+Specialist[?][1] Degree, in Machine Building Processes: Automation of Machine Building
+Engineering.
+
+
+
+---
+
 ### Contact
 [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/)
 
 [WhatsApp](https://wa.me/436602273906)
 
 [Telegram](https://telegram.me/+436602273906)
+
+[1] Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)
+[2]: http://bushuliak.com for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
