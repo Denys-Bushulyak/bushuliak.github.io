@@ -8,7 +8,7 @@ pub(crate) struct ValidatedArgsDto {
     pub input_directory: PathBuf,
 
     /// Destination folder for prepared html
-    pub out: PathBuf,
+    pub output_directory: PathBuf,
 }
 impl TryFrom<Args> for ValidatedArgsDto {
     type Error = ArgumentsValidationError;
@@ -26,25 +26,16 @@ impl TryFrom<Args> for ValidatedArgsDto {
             ));
         };
 
-        let output_directory = if value.out.exists() {
-            if value.out.is_dir() {
-                value.out
-            } else {
-                return Err(ArgumentsValidationError::OutputShouldBeDirectory(value.out));
-            }
-        } else {
-            return Err(ArgumentsValidationError::OutputDirectoryDoesNotExist(
-                value.out,
-            ));
-        };
+        let output_directory = value.out;
 
         Ok(Self {
             input_directory,
-            out: output_directory,
+            output_directory,
         })
     }
 }
 #[derive(Debug)]
+#[allow(unused_attributes, unused)]
 pub enum ArgumentsValidationError {
     InputDirectoryDoesNotExist(PathBuf),
     OutputDirectoryDoesNotExist(PathBuf),

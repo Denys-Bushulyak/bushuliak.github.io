@@ -4,8 +4,8 @@ mod functions;
 use std::{error::Error, path::PathBuf};
 
 use clap::Parser;
-use entities::{html_file::HtmlFile, validated_args_dto::ValidatedArgsDto};
-use functions::read_directory;
+use entities::{markdown_file::MarkdownFile, validated_args_dto::ValidatedArgsDto};
+use functions::{convert_to_html, read_directory, save_to_disk};
 
 /// Program to parse markdown to html
 #[derive(Parser, Debug)]
@@ -23,8 +23,9 @@ struct Args {
 fn main() -> Result<(), Box<dyn Error>> {
     let args: ValidatedArgsDto = Args::parse().try_into()?;
 
-    let tree: Vec<HtmlFile> = read_directory(&args.input_directory);
-
-    dbg!(tree);
-    Ok(())
+    read_directory(args.input_directory)
+        .map(MarkdownFile::from)
+        .map(convert_to_html(&args.output_directory))
+        .try_for_each(save_to_disk)
+        .map_err(Into::into)
 }

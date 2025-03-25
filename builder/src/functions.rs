@@ -1,47 +1,101 @@
 use std::{
+    error::Error,
+    fmt::Display,
     fs::{self, DirEntry},
-    path::PathBuf,
+    io::Write,
+    path::{Path, PathBuf},
 };
 
-use crate::HtmlFile;
+use crate::{MarkdownFile, entities::html_file::HtmlFile};
 
-pub fn read_directory(dir_path: &PathBuf) -> Vec<HtmlFile> {
+pub fn read_directory(dir_path: PathBuf) -> impl Iterator<Item = (PathBuf, String)> {
     fs::read_dir(dir_path)
         .map(|read_directory| read_directory.flatten())
-        .map(Iterator::collect::<Vec<DirEntry>>)
-        .iter()
+        .into_iter()
         .flatten()
-        .map(read_html_files(&transform_to_html_file))
-        .flat_map(|v| v.into_iter())
-        .collect::<Vec<HtmlFile>>()
+        .map(recur_read_files)
+        .flatten()
 }
 
-fn transform_to_html_file(path: &PathBuf, content: &str) -> HtmlFile {
-    HtmlFile {
-        path: path.clone(),
-        content: content.to_string(),
+fn recur_read_files(entry: DirEntry) -> Vec<(PathBuf, String)> {
+    let path = entry.path();
+
+    if path.is_dir() {
+        read_directory(path).collect()
+    } else {
+        path.clone()
+            .extension()
+            .and_then(|extension| {
+                if extension == "md" {
+                    fs::read_to_string(&path)
+                        .map(|content| (path, content))
+                        .map(|v| vec![v])
+                        .ok()
+                } else {
+                    Some(Vec::new())
+                }
+            })
+            .unwrap_or_default()
     }
 }
 
-fn read_html_files<F>(transform: &F) -> impl Fn(&DirEntry) -> Vec<HtmlFile>
-where
-    F: Fn(&PathBuf, &str) -> HtmlFile,
-{
-    return |directory: &DirEntry| {
-        let path = directory.path();
+fn append_html_extension(file_name: &Path) -> Option<std::ffi::OsString> {
+    let mut file_name = file_name.file_stem()?.to_os_string();
+    file_name.push(".html");
 
-        if path.is_dir() {
-            read_directory(&path)
-        } else {
-            let extension = path.extension().unwrap();
-            if extension == "md" {
-                fs::read_to_string(&path)
-                    .map(|content| transform(&path, &content))
-                    .map(|v| vec![v])
-                    .unwrap()
-            } else {
-                vec![]
-            }
-        }
-    };
+    Some(file_name)
+}
+
+pub fn convert_to_html(output_directory: &PathBuf) -> impl Fn(MarkdownFile) -> HtmlFile {
+    |markdown_file: MarkdownFile| {
+        let file_name = append_html_extension(&markdown_file.path)
+            .unwrap_or(markdown_file.path.as_os_str().to_os_string());
+
+        let mut path_to_save =
+            output_directory.join(markdown_file.path.components().skip(2).collect::<PathBuf>());
+        path_to_save.set_file_name(file_name);
+
+        let parser = pulldown_cmark::Parser::new(&markdown_file.content);
+        let mut html_output = String::new();
+        pulldown_cmark::html::push_html(&mut html_output, parser);
+
+        HtmlFile::new((path_to_save, html_output))
+    }
+}
+
+#[derive(Debug)]
+#[allow(unused_attributes, unused)]
+pub enum SaveToDiskError {
+    ErrorOnSavingFile(std::io::Error),
+    CanNotTakeParentDirectoryFrom(PathBuf),
+}
+
+impl Display for SaveToDiskError {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{:#?}", self)
+    }
+}
+
+impl From<std::io::Error> for SaveToDiskError {
+    fn from(value: std::io::Error) -> Self {
+        SaveToDiskError::ErrorOnSavingFile(value)
+    }
+}
+
+impl Error for SaveToDiskError {}
+
+pub fn save_to_disk(html_file: HtmlFile) -> Result<(), SaveToDiskError> {
+    html_file
+        .path_to_save
+        .clone()
+        .parent()
+        .ok_or(SaveToDiskError::CanNotTakeParentDirectoryFrom(
+            html_file.path_to_save.clone(),
+        ))
+        .and_then(|dir| fs::create_dir_all(dir).map_err(Into::into))
+        .and_then(|_| {
+            std::fs::File::create(html_file.path_to_save)
+                .and_then(|mut file| file.write_all(html_file.content.as_bytes()))
+                .map_err(Into::into)
+        })
 }
