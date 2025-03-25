@@ -11,8 +11,8 @@
 - Adept at translating business needs into technical solutions and optimizing processes.
 - Extensive knowledge of data processing, analytics, and system integration.
 
----
-## Skills [1][1]
+## Skills
+___Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)___
 
 ### Programming Languages and DSLs
 - Rust
@@ -292,8 +292,10 @@ I gathered business requirements and translated them into technical specificatio
 ## Education
 
 Vinnitsa National Technical University (from 2008 to 2009)
-Specialist[?][2] Degree, in Machine Building Processes: Automation of Machine Building
+Specialist^ Degree, in Machine Building Processes: Automation of Machine Building
 Engineering.
+
+^ for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
 
 ⸻
 
@@ -303,9 +305,3 @@ Engineering.
 [WhatsApp](https://wa.me/436602273906)
 
 [Telegram](https://telegram.me/+436602273906)
-
-⸻
-
-[1] Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)
-
-[2]: http://bushuliak.com for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
