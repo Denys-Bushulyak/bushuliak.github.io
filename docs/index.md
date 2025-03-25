@@ -119,6 +119,8 @@
 - Tableau Server
 - Apache Airflow
 
+---
+
 ## Highlighted Projects
 
 ## Now You Know
@@ -293,8 +295,7 @@ Vinnitsa National Technical University (from 2008 to 2009)
 Specialist[?][2] Degree, in Machine Building Processes: Automation of Machine Building
 Engineering.
 
-
----
+⸻
 
 ### Contact
 [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/)
@@ -303,7 +304,7 @@ Engineering.
 
 [Telegram](https://telegram.me/+436602273906)
 
-___
+⸻
 
 [1] Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)
 
