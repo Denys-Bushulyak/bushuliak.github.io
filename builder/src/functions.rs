@@ -46,7 +46,10 @@ fn append_html_extension(file_name: &Path) -> Option<std::ffi::OsString> {
     Some(file_name)
 }
 
-pub fn convert_to_html(output_directory: &PathBuf) -> impl Fn(MarkdownFile) -> HtmlFile {
+pub fn convert_to_html(
+    output_directory: &PathBuf,
+    layout_html_file: &str,
+) -> impl Fn(MarkdownFile) -> HtmlFile {
     |markdown_file: MarkdownFile| {
         let file_name = append_html_extension(&markdown_file.path)
             .unwrap_or(markdown_file.path.as_os_str().to_os_string());
@@ -58,6 +61,8 @@ pub fn convert_to_html(output_directory: &PathBuf) -> impl Fn(MarkdownFile) -> H
         let parser = pulldown_cmark::Parser::new(&markdown_file.content);
         let mut html_output = String::new();
         pulldown_cmark::html::push_html(&mut html_output, parser);
+
+        let html_output = layout_html_file.replace("<<CONTENT>>", &html_output);
 
         HtmlFile::new((path_to_save, html_output))
     }
