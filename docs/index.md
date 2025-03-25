@@ -1,8 +1,6 @@
 # Denys Bushuliak
-
 ## Solution Architect & Software Developer
 
-## Essentials of my experience
 - 20+ years in software development across desktop, web, mobile, and server applications.
 - Expertise in scalable solutions like ERP systems, online platforms, and service delivery systems.
 - Proficient in modern architectures: microservices, hexagonal design, and domain-driven design.
@@ -266,7 +264,7 @@ As the architect, lead developer, and team leader, I was responsible for designi
 
 ⸻
 
-## SafeFrontier Service Delivery Platform
+## SafeFrontier LLC SDP
 ### Project Description
 Cloud-based service delivery platform for businesses.
 ### Responsibilities
@@ -287,7 +285,7 @@ I gathered business requirements and translated them into technical specificatio
 #### Tools and Apps
 * MySQL
 
----
+⸻
 
 ## Education
 
@@ -295,13 +293,36 @@ Vinnitsa National Technical University (from 2008 to 2009)
 Specialist^ Degree, in Machine Building Processes: Automation of Machine Building
 Engineering.
 
+## Known Languages
+* English Reading C2,
+Listening and speaking B2 (EF SET)[https://cert.efset.org/WSdoAM],
+* Ukrainian - Native
+* Russian - Native
+* Kurmanji - B1
+* Turkish - A1
+
 ^ for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
 
 ⸻
 
-### Contact
-[LinkedIn](https://www.linkedin.com/in/denys-bushulyak/)
+## Continuous Learning and Mentorship
 
-[WhatsApp](https://wa.me/436602273906)
+Committed to continual learning and staying updated with the latest advancements, I regularly read white papers from sources such as ACM, IEEE, VLDB, and many others. I enjoy mentoring newcomers on their journey as developers and also volunteer to teach aspiring developers, sharing my expertise to help them succeed.
 
-[Telegram](https://telegram.me/+436602273906)
+## List of interests
+* Database internal architecture, data storing formats, InMemory DBMS;
+* OS Development and hypervisors;
+* WebAssembly
+* Functional Programming
+
+## Volunteering
+* I teach of programming and server application architecture for free.
+* As a Jehovah's Witness, I teach the Bible to everyone who wants to know more about
+it for free.
+* I have created and maintain a website for learning the Kurdish language (kurmanji
+dialect) at [https://kurmanci-denys-bushuliak.vercel.app](https://kurmanci-denys-bushuliak.vercel.app).
+
+⸻
+
+## Contact
+[LinkedIn](https://www.linkedin.com/in/denys-bushulyak/) | [WhatsApp](https://wa.me/436602273906) | [Telegram](https://telegram.me/+436602273906)
