@@ -1,1 +1,0 @@
-## Article about Rust
