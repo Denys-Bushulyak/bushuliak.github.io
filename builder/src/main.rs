@@ -19,7 +19,7 @@ struct Args {
 #[derive(Debug)]
 struct ValidatedArgsDto {
     /// Source folder with markdowns
-    r#in: PathBuf,
+    inputDirectory: PathBuf,
 
     /// Destination folder for prepared html
     out: PathBuf,
@@ -72,7 +72,7 @@ impl TryFrom<Args> for ValidatedArgsDto {
         };
 
         Ok(Self {
-            r#in: input_directory,
+            inputDirectory: input_directory,
             out: output_directory,
         })
     }
@@ -81,7 +81,7 @@ impl TryFrom<Args> for ValidatedArgsDto {
 fn main() -> Result<(), Box<dyn Error>> {
     let args: ValidatedArgsDto = Args::parse().try_into()?;
 
-    let tree: Vec<HtmlFile> = read_directory(args.r#in).collect();
+    let tree: Vec<HtmlFile> = read_directory(&args.inputDirectory)?;
 
     dbg!(tree);
     Ok(())
@@ -93,25 +93,50 @@ struct HtmlFile {
     content: String,
 }
 
-fn read_directory(dir: PathBuf) -> impl Iterator<Item = HtmlFile> {
-    fn visit_dirs(dir: &PathBuf) -> Vec<HtmlFile> {
-        let mut files = Vec::new();
-        if let Ok(entries) = fs::read_dir(dir) {
-            for entry in entries.flatten() {
-                let path = entry.path();
-                if path.is_dir() {
-                    files.extend(visit_dirs(&path));
-                } else if let Some(ext) = path.extension() {
-                    if ext == "md" {
-                        if let Ok(content) = fs::read_to_string(&path) {
-                            files.push(HtmlFile { path, content });
+#[derive(Debug)]
+enum ReadDirectoryProblems {
+    CanNotReadDirectory(std::io::Error),
+    FileNotMarkDown,
+}
+
+impl Display for ReadDirectoryProblems {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "{:#?}", self)
+    }
+}
+
+impl Error for ReadDirectoryProblems {}
+
+fn read_directory(dir_path: &PathBuf) -> Result<Vec<HtmlFile>, ReadDirectoryProblems> {
+    fn visit_dirs_fp(dir_path: &PathBuf) -> Result<Vec<HtmlFile>, ReadDirectoryProblems> {
+        fs::read_dir(dir_path)
+            .and_then(|read_directory| {
+                let filter_map = read_directory
+                    .flatten()
+                    .filter_map(|directory| {
+                        let path = directory.path();
+
+                        if path.is_dir() {
+                            visit_dirs_fp(&path).ok()
+                        } else {
+                            let extension = path.extension().unwrap();
+                            if extension == "md" {
+                                fs::read_to_string(&path)
+                                    .map(|content| HtmlFile { path, content })
+                                    .map(|v| Vec::from_iter([v]))
+                                    .ok()
+                            } else {
+                                None
+                            }
                         }
-                    }
-                }
-            }
-        }
-        files
+                    })
+                    .flat_map(|v| v.into_iter())
+                    .collect();
+
+                Ok(filter_map)
+            })
+            .map_err(|e| ReadDirectoryProblems::CanNotReadDirectory(e))
     }
 
-    visit_dirs(&dir).into_iter()
+    visit_dirs_fp(dir_path)
 }
