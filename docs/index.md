@@ -1,17 +1,18 @@
-# Hello👋🏻, my name is Denys Bushuliak.
+# Denys Bushuliak
 
-## And I am software developer and solution architect.
+## Solution Architect & Software Developer
 
----
-## Essentials of My Experience
+## Essentials of my experience
+- 20+ years in software development across desktop, web, mobile, and server applications.
+- Expertise in scalable solutions like ERP systems, online platforms, and service delivery systems.
+- Proficient in modern architectures: microservices, hexagonal design, and domain-driven design.
+- Skilled in cloud infrastructure with AWS and Scaleway Cloud.
+- Strong leadership, mentoring, and team management experience.
+- Adept at translating business needs into technical solutions and optimizing processes.
+- Extensive knowledge of data processing, analytics, and system integration.
 
-- Extensive expertise in designing and developing scalable software solutions, including ERP systems, online platforms, and service delivery systems.
-- Proficient in a wide range of programming languages, frameworks, and tools, with a focus on modern architectures such as microservices, hexagonal architecture, and domain-driven design.
-- Skilled in cloud infrastructure design and deployment, leveraging platforms like AWS and Scaleway Cloud.
-- Strong leadership and mentoring abilities, with experience managing teams and ensuring high-quality code delivery.
-- Adept at translating business requirements into technical solutions, optimizing processes, and implementing innovative features.
-- Comprehensive knowledge of data processing, analytics, and system integration for diverse industries.
-
+___
+## Highlighted Projects
 
 ## Now You Know
 ### Project Description
@@ -64,7 +65,7 @@ I was responsible for designing the internal architecture, developing a product 
 
 ⸻
 
-## Bumer Shoes Factory
+## "Bumer" Shoes Factory
 ### Project Description
 
 Development of an ERP system for a shoe manufacturing company.
@@ -175,3 +176,12 @@ I gathered business requirements and translated them into technical specificatio
 
 #### Tools and Apps
 * MySQL
+
+---
+
+### Contact
+[LinkedIn](https://www.linkedin.com/in/denys-bushulyak/)
+
+[WhatsApp](https://wa.me/436602273906)
+
+[Telegram](https://telegram.me/+436602273906)
