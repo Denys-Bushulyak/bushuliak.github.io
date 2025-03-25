@@ -1,6 +1,15 @@
 # Denys Bushuliak
 ## Solution Architect & Software Developer
 
+<nav>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>  
+<a href="#education">Education</a>  
+<a href="#list-of-interests">List of Interests</a>  
+<a href="#volunteering">Volunteering</a>  
+<a href="#contact">Contact</a>
+</nav>
+
 - 20+ years in software development across desktop, web, mobile, and server applications.
 - Expertise in scalable solutions like ERP systems, online platforms, and service delivery systems.
 - Proficient in modern architectures: microservices, hexagonal design, and domain-driven design.
@@ -9,8 +18,9 @@
 - Adept at translating business needs into technical solutions and optimizing processes.
 - Extensive knowledge of data processing, analytics, and system integration.
 
-## Skills
-___Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)___
+<h2 id="skills">Skills</h2>
+
+_Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)_
 
 ### Programming Languages and DSLs
 - Rust
@@ -119,7 +129,8 @@ ___Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulya
 
 ---
 
-## Highlighted Projects
+<h2 id="projects">Projects
+</h2>
 
 ## Now You Know
 ### Project Description
@@ -287,13 +298,13 @@ I gathered business requirements and translated them into technical specificatio
 
 ⸻
 
-## Education
+<h2 id="education">Education</h2>
 
 Vinnitsa National Technical University (from 2008 to 2009)
 Specialist^ Degree, in Machine Building Processes: Automation of Machine Building
 Engineering.
 
-## Known Languages
+### Known Languages
 * English Reading C2,
 Listening and speaking B2 (EF SET)[https://cert.efset.org/WSdoAM],
 * Ukrainian - Native
@@ -304,18 +315,17 @@ Listening and speaking B2 (EF SET)[https://cert.efset.org/WSdoAM],
 ^ for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
 
 ⸻
-
-## Continuous Learning and Mentorship
+<h2 id="list-of-interests">List of interests</h2>
 
 Committed to continual learning and staying updated with the latest advancements, I regularly read white papers from sources such as ACM, IEEE, VLDB, and many others. I enjoy mentoring newcomers on their journey as developers and also volunteer to teach aspiring developers, sharing my expertise to help them succeed.
 
-## List of interests
 * Database internal architecture, data storing formats, InMemory DBMS;
 * OS Development and hypervisors;
 * WebAssembly
 * Functional Programming
 
-## Volunteering
+<h2 id="volunteering">Volunteering</h2>
+
 * I teach of programming and server application architecture for free.
 * As a Jehovah's Witness, I teach the Bible to everyone who wants to know more about
 it for free.
@@ -324,5 +334,6 @@ dialect) at [https://kurmanci-denys-bushuliak.vercel.app](https://kurmanci-denys
 
 ⸻
 
-## Contact
+<h2 id="contact">Contact</h2>
+
 [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/) | [WhatsApp](https://wa.me/436602273906) | [Telegram](https://telegram.me/+436602273906)
