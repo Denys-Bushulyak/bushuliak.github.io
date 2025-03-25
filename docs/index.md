@@ -303,6 +303,8 @@ Engineering.
 
 [Telegram](https://telegram.me/+436602273906)
 
+___
+
 [1] Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/details/experience/)
 
 [2]: http://bushuliak.com for understanding: In Ukraine, this is between a bachelor’s and a master’s degree.
