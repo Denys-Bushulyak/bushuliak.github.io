@@ -57,75 +57,78 @@ _Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/
 - Service-Oriented Architecture (SOA)
 
 ### API Development
+- Any Custom protocol
 - GraphQL
 - REST
 - SOAP
-- XML-RPC
 - WebSockets
-- Any Custom
+- XML-RPC
 
 ### Frontend Technologies
-- ReactJS
 - AngularJS/Angular
-- Vue.js
-- Redux
 - React Native
-- XState
+- ReactJS
+- Redux
 - RxJS
+- Vue.js
 - WebAssembly
+- XState
 
 ### Backend Technologies
-- Tokio
-- Laravel
-- Symfony
-- Express
-- Socket.io
-- ReactPHP
-- JDBC Type 3 Driver Implementation
-- RedBeanPHP
 - Doctrine
+- Express
 - GraphQL (Apollo, Yoga, Vanilla)
-- WebAssembly
+- JDBC Type 3 Driver Implementation
+- Laravel
 - Pest.rs
+- ReactPHP
+- RedBeanPHP
+- Socket.io
+- Symfony
+- Tokio
+- WebAssembly
 
 ### Testing
-- Test-Driven Development (TDD)
 - Behavior-Driven Development (BDD)
 - Cucumber Framework
+- Test-Driven Development (TDD)
 
 ### Tools and IDEs
-- VIM / VSCode
+- Git
 - GitHub Actions
 - GitLab CI/CD
-- Git, SVN
+- JetBrains tools
 - Jest
-- React Testing Library
 - Playwright
+- React Testing Library
+- SVN
+- VIM
+- VSCode
 
 ### Database Technologies
-- MySQL
-- PostgreSQL
-- SQLite
-- Redis & Redis Streams
-- MongoDB
-- ArangoDB
-- Neo4J
-- ClickHouse
-- Presto/Trino
-- Apache Arrow
-- Apache DataFusion
-- Parquet
-- Avro
+- Apache Arrow  
+- Apache DataFusion  
+- ArangoDB  
+- Avro  
+- ClickHouse  
+- MongoDB  
+- MySQL  
+- Neo4J  
+- Parquet  
+- PostgreSQL  
+- Presto/Trino  
+- Redis & Redis Streams  
+- SQLite  
 
 ### Cloud and DevOps
+- Apache Airflow
+- AWS (EKS, SQS, SNS, Lambda, IAM)
 - Docker
 - Docker Swarm
-- AWS (EKS, SQS, SNS, Lambda, IAM)
-- Scaleway Cloud
 - Kubernetes
 - MinIO
+- Scaleway Cloud
 - Tableau Server
-- Apache Airflow
 
 ---
 
@@ -142,45 +145,45 @@ I was responsible for designing the internal architecture, developing a product 
 
 ### Technologies and Tools:
 #### Languages
-* Python
-* Rust (Tokio, Cargo Lambda, Workspace)
-* Node.JS
-* JavaScript/TypeScript (JS/TS)
-* HTML5/CSS
-* Custom SQL Dialect
+* Custom SQL Dialect  
+* HTML5/CSS  
+* JavaScript/TypeScript (JS/TS)  
+* Node.JS  
+* Python  
+* Rust (Tokio, Cargo Lambda, Workspace)  
 
 #### Technologies
-* Kubernetes (K8S)
-* Service-Oriented Architecture (SOA)
-* Microservices
-* Hexagonal Architecture
-* REST
-* GraphQL
-* Unit Testing
-* DataFusion
-* Arrow
-* Parquet
-* DataFrame
+* Apache Arrow  
+* Apache DataFusion  
+* AWS EKS (k8s)
+* DataFrame  
+* GraphQL  
+* Hexagonal Architecture  
+* Microservices  
+* Parquet  
+* REST  
+* Service-Oriented Architecture (SOA)  
+* Unit Testing  
 
 #### Tools and Apps
-* React.js
-* Apache Airflow
-* AWS EKS
-* AWS S3
-* AWS SNS
-* AWS SQS
-* AWS EFS
-* AWS ElastiCache
-* AWS CloudFront
-* AWS EventBridge
-* AWS CloudWatch
-* AWS EC2
-* AWS Lambda
-* Scaleway Cloud
-* Pest.rs
-* MongoDB
-* PostgreSQL
-* CI/CD
+* Apache Airflow  
+* AWS CloudFront  
+* AWS CloudWatch  
+* AWS EC2  
+* AWS EFS  
+* AWS EKS (k8s) 
+* AWS ElastiCache  
+* AWS EventBridge  
+* AWS Lambda  
+* AWS S3  
+* AWS SNS  
+* AWS SQS  
+* CI/CD  
+* MongoDB  
+* Pest.rs  
+* PostgreSQL  
+* React.js  
+* Scaleway Cloud  
 
 ⸻
 
@@ -195,22 +198,23 @@ As the architect and tech leader, I was responsible for designing the solution f
 
 ### Technologies and Tools
 #### Languages
-* Node.JS
-* JavaScript/TypeScript (JS/TS)
+* JavaScript  
+* TypeScript  
+* Node.JS  
 
 #### Technologies
-* GraphQL
-* Event Sourcing
-* CQRS
-* Hexagonal Architecture
+* CQRS  
+* Event Sourcing  
+* GraphQL  
+* Hexagonal Architecture  
 
 #### Tools and Apps
-* ReactJS
-* GitHub Actions
-* AWS S3
-* ArangoDB
-* Docker Compose
-* MongoDB
+* ArangoDB  
+* AWS S3  
+* Docker Compose  
+* GitHub Actions  
+* MongoDB  
+* ReactJS  
 
 ⸻
 
@@ -223,27 +227,28 @@ Travel operator ERP system development.
 As the architect and lead developer, I was in charge of designing a new ERP system with a seamless migration from the legacy system. I managed the team, defined the architecture, selected the stack, and ensured code quality throughout the project.
 ### Technologies and Tools
 #### Languages
-* Node.JS
-* PHP
-* HTML/CSS
-* JavaScript/TypeScript (JS/TS)
+* HTML/CSS  
+* JavaScript  
+* TypeScript  
+* Node.JS  
+* PHP  
 
 #### Technologies
-* Domain-Driven Design
-* Microservices
-* GraphQL API
-* REST API
-* ReactPHP
-* RoadRunner
-* JWT
-* Custom ABAC Service
+* Custom ABAC Service  
+* Domain-Driven Design  
+* GraphQL API  
+* JWT  
+* Microservices  
+* ReactPHP  
+* REST API  
+* RoadRunner  
 
 #### Tools and Apps
-* GitLab CI/CD
-* Jenkins
-* OpenShift
-* Redis
-* MongoDB
+* GitLab CI/CD  
+* Jenkins  
+* MongoDB  
+* OpenShift  
+* Redis  
 
 ⸻
 
@@ -256,22 +261,23 @@ As the architect, lead developer, and team leader, I was responsible for designi
 #### Languages
 * Node.JS
 * PHP
-* JavaScript/TypeScript (JS/TS)
+* JavaScript
+* TypeScript
 
 #### Technologies
-* Microservices
-* Laravel Framework
-* Socket.io
-* JWT
+* JWT  
+* Laravel Framework  
+* Microservices  
+* Socket.io  
 
 #### Tools and Apps
-* ReactJS
-* React Native
-* Expo Framework
-* Docker Swarm
-* MongoDB
-* Redis
-* Pub/Sub
+* Docker Swarm  
+* Expo Framework  
+* MongoDB  
+* Pub/Sub  
+* React Native  
+* ReactJS  
+* Redis  
 
 ⸻
 
