@@ -39,22 +39,22 @@ _Essential only. More at [LinkedIn](https://www.linkedin.com/in/denys-bushulyak/
 - PEG Grammar
 
 ### Architectural Patterns and Concepts
-- Hexagonal Architecture (Port and Adapter)
+- Concurrency
+- CQRS
+- Developer Experience (DX)
 - Domain-Driven Design (DDD)
-- MVC/HMVC
-- Service-Oriented Architecture (SOA)
-- Microservices
 - Event Sourcing
-- Pub/Sub
 - Finite State Machines
 - Flux Architecture Pattern
-- Onion Architecture
-- CQRS
+- Hexagonal Architecture (Port and Adapter)
 - Micro Frontend
-- Developer Experience (DX)
-- RBAC/ABAC
-- Concurrency
+- Microservices
 - Multithreading
+- MVC/HMVC
+- Onion Architecture
+- Pub/Sub
+- RBAC/ABAC
+- Service-Oriented Architecture (SOA)
 
 ### API Development
 - GraphQL
