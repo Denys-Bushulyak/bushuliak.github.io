@@ -18,6 +18,10 @@ body > footer{
     text-align: center;
 }
 
+nav a{
+    padding: 0 10px
+}
+
 @media print {
     nav{
         display: none;

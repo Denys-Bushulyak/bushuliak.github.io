@@ -339,7 +339,3 @@ it for free.
 dialect) at [https://kurmanci-denys-bushuliak.vercel.app](https://kurmanci-denys-bushuliak.vercel.app).
 
 ⸻
-
-<h2 id="contact">Contact</h2>
-
-[LinkedIn](https://www.linkedin.com/in/denys-bushulyak/) | [WhatsApp](https://wa.me/436602273906) | [Telegram](https://telegram.me/+436602273906) | [GitHub](https://github.com/Denys-Bushulyak)
