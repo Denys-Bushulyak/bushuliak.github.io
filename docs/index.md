@@ -1,1 +1,0 @@
-I am a highly experienced Software Engineer and solution architect with over 20 years of professional experience in designing, developing, and implementing complex software solutions.

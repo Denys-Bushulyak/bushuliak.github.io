@@ -21,6 +21,7 @@ struct Args {
 }
 
 const LAYOUT_FILE_PATH: &str = "index.html";
+const CONTENT_PLACEHOLDER: &str = "<!--REPLACE_ME_BY_CONTENT-->";
 
 fn main() -> Result<(), Box<dyn Error>> {
     let args: ValidatedArgsDto = Args::parse().try_into()?;
@@ -30,7 +31,11 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     read_directory(args.input_directory)
         .map(MarkdownFile::from)
-        .map(convert_to_html(&args.output_directory, &layout_file))
+        .map(convert_to_html(
+            &args.output_directory,
+            &layout_file,
+            CONTENT_PLACEHOLDER,
+        ))
         .try_for_each(save_to_disk)
         .map_err(Into::into)
 }

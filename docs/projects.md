@@ -1,5 +1,8 @@
-
-## Projects
+<style>
+    #projects-link{
+        color: red !important;
+    }
+</style>
 
 ## Now You Know
 

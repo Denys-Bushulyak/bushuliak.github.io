@@ -1,4 +1,8 @@
-## Recommendation Letters
+<style>
+    #recommendation-letters-link{
+        color: red !important;
+    }
+</style>
 
 ### In Remote
 

@@ -1,4 +1,8 @@
-## About me
+<style>
+    #about-me-link{
+        color: red !important;
+    }
+</style>
 
 I am a highly experienced Software Engineer and solution architect with over 20 years of professional experience in designing, developing, and implementing complex software solutions.  My expertise spans a wide range of domains, including ERP systems, CRM, payment systems, and service delivery platforms.  I am adept at transforming business requirements into robust, scalable, and maintainable technical solutions, with a strong focus on delivering value and accommodating future growth.
 

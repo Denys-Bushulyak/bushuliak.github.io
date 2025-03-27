@@ -1,4 +1,8 @@
-## Skills
+<style>
+    #skills-link{
+        color: red !important;
+    }
+</style>
 
 ### Programming Languages and DSLs
 Rust
