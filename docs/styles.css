@@ -21,6 +21,9 @@ body > footer{
 nav a{
     padding: 0 10px
 }
+nav a:first-child{
+    padding-left: 0;
+}
 
 @media print {
     nav{

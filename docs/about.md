@@ -1,20 +1,14 @@
 ## About me
 
-I am Software Engineer and software solution
-architect with deep experience in building distributed
-systems and modern web applications. Over the past
-few years, he has concentrated on developing backend
-services in Rust while also contributing to frontend
-layers using React and modern JavaScript frameworks.
-He has hands-on experience with a wide range of
-systems — from ERP platforms to real-time logistics
-tools — and has worked across multiple stacks,
-including Node.js, PHP, and .NET. He takes pride in
-writing robust, testable code, implementing
-architectural patterns like Hexagonal and CQRS, and
-designing infrastructure that’s ready for growth.
+I am a highly experienced Software Engineer and solution architect with over 20 years of professional experience in designing, developing, and implementing complex software solutions.  My expertise spans a wide range of domains, including ERP systems, CRM, payment systems, and service delivery platforms.  I am adept at transforming business requirements into robust, scalable, and maintainable technical solutions, with a strong focus on delivering value and accommodating future growth.
 
-<h2 id="education">Education</h2>
+Throughout my career, I have focused on building distributed systems and modern web applications, with a strong background in backend development using languages such as Rust, PHP, Java, and Node.js.  I am also proficient in frontend development using modern JavaScript frameworks like ReactJS and Angular.  I am experienced in working across various technology stacks and am comfortable with full-stack development.
+
+I prioritize writing clean, testable code and am well-versed in implementing architectural patterns such as Hexagonal Architecture, CQRS, microservices, and Domain-Driven Design.  I am experienced in designing and managing data storage systems, deploying and maintaining cloud infrastructure, and configuring CI/CD pipelines.
+
+I am committed to continuous learning, staying current with the latest technological advancements, and mentoring other developers.
+
+<h3 id="education">Education</h3>
 
 Vinnitsa National Technical University (from 2008 to 2009)
 Specialist* Degree, in Machine Building Processes: Automation of Machine Building
@@ -30,8 +24,7 @@ Engineering.
 * Turkish - A1
 
 
-⸻
-<h2 id="list-of-interests">List of interests</h2>
+<h3 id="list-of-interests">List of interests</h3>
 
 Committed to continual learning and staying updated with the latest advancements, I regularly read white papers from sources such as ACM, IEEE, VLDB, and many others. I enjoy mentoring newcomers on their journey as developers and also volunteer to teach aspiring developers, sharing my expertise to help them succeed.
 
@@ -40,7 +33,7 @@ Committed to continual learning and staying updated with the latest advancements
 * WebAssembly
 * Functional Programming
 
-<h2 id="volunteering">Volunteering</h2>
+<h3 id="volunteering">Volunteering</h3>
 
 * I teach of programming and server application architecture for free.
 * As a Jehovah's Witness, I teach the Bible to everyone who wants to know more about
