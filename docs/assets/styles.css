@@ -22,13 +22,12 @@ body {
 }
 
 article {
-  flex: 1;
+  flex: 2;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   min-height: calc(100vh - 2em);
   margin: 1em 2em;
 }
@@ -37,6 +36,7 @@ main header {
   display: flex;
   flex-direction: column;
   margin-right: 2em;
+  flex: 1
 }
 
 #footer {
@@ -89,8 +89,8 @@ footer {
   }
 }
 
-@media (width >= 200px) {
+/* @media handheld {
   main {
     flex-direction: row;
   }
-}
+} */
