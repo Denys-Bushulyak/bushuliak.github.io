@@ -19,9 +19,11 @@ Rust
 , Custom DSLs
 , ANTLR
 , PEG Grammar
+, BNF/BNFC
 
 ### Architectural Patterns and Concepts
-Concurrency
+Category Theory
+, Concurrency
 , CQRS
 , Developer Experience (DX)
 , Domain-Driven Design (DDD)

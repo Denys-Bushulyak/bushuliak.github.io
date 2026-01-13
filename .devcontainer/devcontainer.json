@@ -1,0 +1,8 @@
+{
+	"name": "Rust Static Site Builder",
+	"image": "mcr.microsoft.com/devcontainers/rust:1-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {},
+	},
+	"remoteUser": "vscode",
+}
