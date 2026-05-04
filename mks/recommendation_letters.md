@@ -24,6 +24,8 @@ HR Manager, DevBrother
 
 <a href="./assets/letters/DB_Recommendation_Letter.pdf">Document</a>
 
+---
+
 ### In Remote
 
 To whom it may concern,
