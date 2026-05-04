@@ -4,6 +4,26 @@
     }
 </style>
 
+### DevBrother LLC
+March 2, 2026
+
+Denys is a responsible and proactive Rust Engineer with strong ownership of his work. He consistently
+delivers high-quality solutions and contributes valuable ideas to improve architecture, performance,
+and development processes. He is genuinely invested in both the product and the team’s success.
+He has solid expertise in distributed and high-load systems and approaches development in a
+structured, thoughtful way. Denys actively participates in technical discussions, carefully evaluates
+trade-offs, and collaborates effectively in pair programming to optimize performance.
+Beyond his technical skills, Denys is open, positive, and easy to work with. He communicates complex
+ideas clearly and contributes to a culture of knowledge sharing by leading internal tech talks.
+I confidently recommend Denys as a dedicated engineer and strong team player who would bring real
+value to any company.
+
+Sincerely,
+Anna Yevstiefieieva
+HR Manager, DevBrother
+
+<a href="./assets/letters/DB_Recommendation_Letter.pdf">Document</a>
+
 ### In Remote
 
 To whom it may concern,
@@ -40,7 +60,7 @@ InRemote LLC
 
 3/29/2024
 
-<a href="./letters/InRemote_Recommendation_letter.pdf">Document</a>
+<a href="./assets/letters/InRemote_Recommendation_letter.pdf">Document</a>
 
 ---
 
@@ -83,4 +103,4 @@ Co-Founder & CTO, Now You Know
 7/3/2024
 
 
-<a href="./letters/Now_You_Know_Recommendation_Letter.pdf">Document</a>
+<a href="./assets/letters/Now_You_Know_Recommendation_Letter.pdf">Document</a>
